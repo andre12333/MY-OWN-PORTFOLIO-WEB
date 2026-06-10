@@ -30,7 +30,7 @@ export default function PortfolioIntro() {
   const line2Ref = useRef<HTMLParagraphElement>(null);
   const line3Ref = useRef<HTMLParagraphElement>(null);
   const ctxRef = useRef<gsap.Context | null>(null);
-  const glitchTimer = useRef<ReturnType<typeof setTimeout>>();
+  const glitchTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const isZh = i18n.language !== "en";
 

@@ -5,8 +5,6 @@ import { Observer } from "gsap/Observer";
 
 gsap.registerPlugin(Observer);
 
-/* All images in one flat track — chapter boundaries marked by array index */
-const SPACER_IDX = [5, 11]; // spacer positions in the array (after ch1 images, after ch2 images)
 const ALL_IMAGES = [
   /* Ch1: 汤尤杯 (5) */
   { src: "/经历/体育/2024年汤姆斯杯暨尤伯杯世界羽毛球团体锦标赛/微信图片_20260528200834_533_2.jpg" },

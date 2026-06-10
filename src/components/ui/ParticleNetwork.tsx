@@ -38,15 +38,6 @@ export default function ParticleNetwork({ colorIndex = 0, className = "" }: Prop
     const ro = new ResizeObserver(() => size());
     if (canvas.parentElement) ro.observe(canvas.parentElement);
 
-    /* wait 2 frames so layout is guaranteed */
-    let dims = { w: 0, h: 0 };
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        const d = size();
-        if (d) dims = d;
-      });
-    });
-
     /* ── particles ── */
     const COUNT = 100;
     interface P { x: number; y: number; vx: number; vy: number; r: number; ph: number; }

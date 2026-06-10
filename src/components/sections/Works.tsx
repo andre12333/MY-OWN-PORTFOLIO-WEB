@@ -48,7 +48,7 @@ export default function Works() {
       gsap.set(allCards, { autoAlpha: 0, x: 0 });
       gsap.set(allCards[0], { autoAlpha: 1 });
 
-      const st = ScrollTrigger.create({
+      ScrollTrigger.create({
         trigger: wrap,
         start: "top top",
         end: `+=${(TOTAL - 1) * 20}%`,
