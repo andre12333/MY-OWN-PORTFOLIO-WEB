@@ -6,7 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const FRAME_COUNT = 15;
-const framePaths = Array.from({ length: FRAME_COUNT }, (_, i) => `/png动画/未命名作品-${i + 1}.png`);
+const BASE = import.meta.env.BASE_URL;
+const framePaths = Array.from({ length: FRAME_COUNT }, (_, i) => `${BASE}png动画/未命名作品-${i + 1}.png`);
 
 export default function ExperienceIntro() {
   const { t, i18n } = useTranslation();

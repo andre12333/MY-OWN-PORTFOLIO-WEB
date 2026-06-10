@@ -2,9 +2,9 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const contactImgs: Record<string, string> = {
-  "zh-CN": "/联系 中.png",
-  "zh-HK": "/联系 繁.png",
-  en: "/联系 英.png",
+  "zh-CN": `${import.meta.env.BASE_URL}联系 中.png`,
+  "zh-HK": `${import.meta.env.BASE_URL}联系 繁.png`,
+  en: `${import.meta.env.BASE_URL}联系 英.png`,
 };
 
 const cards = [
@@ -32,7 +32,7 @@ const cards = [
     label: "WeChat",
     color: "#07C160",
     qr: true,
-    qrSrc: "/contact/1 (1).jpg",
+    qrSrc: `${import.meta.env.BASE_URL}contact/1 (1).jpg`,
     lines: ["18848820612"],
   },
   {
@@ -47,7 +47,7 @@ const cards = [
     label: "Instagram",
     color: "#E1306C",
     qr: true,
-    qrSrc: "/contact/2.jpg",
+    qrSrc: `${import.meta.env.BASE_URL}contact/2.jpg`,
     lines: ["@JIAYE519"],
   },
   {
@@ -60,7 +60,7 @@ const cards = [
     label: "Telegram",
     color: "#0088CC",
     qr: true,
-    qrSrc: "/contact/3.jpg",
+    qrSrc: `${import.meta.env.BASE_URL}contact/3.jpg`,
     lines: ["+86 18848820612", "https://t.me/iamyeqwq"],
   },
 ];

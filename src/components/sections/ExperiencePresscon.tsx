@@ -6,9 +6,9 @@ import { Observer } from "gsap/Observer";
 gsap.registerPlugin(Observer);
 
 const ALL_IMAGES: { src?: string; spacer?: boolean }[] = [
-  { src: "/经历/发布会/吉利汽车 · 银河E5 · 发布会/微信图片_20260528200122_518_2.jpg" },
-  { src: "/经历/发布会/吉利汽车 · 银河E5 · 发布会/微信图片_20260528200123_519_2.jpg" },
-  { src: "/经历/发布会/吉利汽车 · 银河E5 · 发布会/微信图片_20260528200125_520_2.jpg" },
+  { src: `${import.meta.env.BASE_URL}经历/发布会/吉利汽车 · 银河E5 · 发布会/微信图片_20260528200122_518_2.jpg` },
+  { src: `${import.meta.env.BASE_URL}经历/发布会/吉利汽车 · 银河E5 · 发布会/微信图片_20260528200123_519_2.jpg` },
+  { src: `${import.meta.env.BASE_URL}经历/发布会/吉利汽车 · 银河E5 · 发布会/微信图片_20260528200125_520_2.jpg` },
   { spacer: true },
 ];
 

@@ -37,7 +37,7 @@ export default function PartnerMarquee() {
         <div className="marquee-track">
           {LOGOS.concat(LOGOS).map((logo, i) => (
             <div key={i} className="logo-slot">
-              <img src={`/合作伙伴/${logo}`} alt="" className="logo-img" />
+              <img src={`${import.meta.env.BASE_URL}合作伙伴/${logo}`} alt="" className="logo-img" />
             </div>
           ))}
         </div>

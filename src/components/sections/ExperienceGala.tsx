@@ -6,19 +6,19 @@ import { Observer } from "gsap/Observer";
 gsap.registerPlugin(Observer);
 
 const ALL_IMAGES: { src?: string; spacer?: boolean }[] = [
-  { src: "/经历/晚会/1 (1).jpg" },
-  { src: "/经历/晚会/1 (2).jpg" },
+  { src: `${import.meta.env.BASE_URL}经历/晚会/1 (1).jpg` },
+  { src: `${import.meta.env.BASE_URL}经历/晚会/1 (2).jpg` },
   { spacer: true },
-  { src: "/经历/晚会/2 (1).jpg" },
-  { src: "/经历/晚会/2 (2).jpg" },
-  { src: "/经历/晚会/2 (3).jpg" },
+  { src: `${import.meta.env.BASE_URL}经历/晚会/2 (1).jpg` },
+  { src: `${import.meta.env.BASE_URL}经历/晚会/2 (2).jpg` },
+  { src: `${import.meta.env.BASE_URL}经历/晚会/2 (3).jpg` },
   { spacer: true },
-  { src: "/经历/晚会/3 (1).jpg" },
-  { src: "/经历/晚会/3 (2).jpg" },
-  { src: "/经历/晚会/3 (3).jpg" },
+  { src: `${import.meta.env.BASE_URL}经历/晚会/3 (1).jpg` },
+  { src: `${import.meta.env.BASE_URL}经历/晚会/3 (2).jpg` },
+  { src: `${import.meta.env.BASE_URL}经历/晚会/3 (3).jpg` },
   { spacer: true },
-  { src: "/经历/晚会/4 (1).jpg" },
-  { src: "/经历/晚会/4 (2).jpg" },
+  { src: `${import.meta.env.BASE_URL}经历/晚会/4 (1).jpg` },
+  { src: `${import.meta.env.BASE_URL}经历/晚会/4 (2).jpg` },
   { spacer: true },
 ];
 

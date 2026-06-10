@@ -6,10 +6,10 @@ import { Observer } from "gsap/Observer";
 gsap.registerPlugin(Observer);
 
 const ALL_IMAGES: { src?: string; spacer?: boolean }[] = [
-  { src: "/经历/游戏/2024 · 2025 穿越火线手游职业联赛(CFML)/微信图片_20260528200549_526_2.jpg" },
-  { src: "/经历/游戏/2024 · 2025 穿越火线手游职业联赛(CFML)/微信图片_20260528200550_527_2.jpg" },
-  { src: "/经历/游戏/2024 · 2025 穿越火线手游职业联赛(CFML)/微信图片_20260528200551_528_2.jpg" },
-  { src: "/经历/游戏/2024 · 2025 穿越火线手游职业联赛(CFML)/微信图片_20260528200552_529_2.jpg" },
+  { src: `${import.meta.env.BASE_URL}经历/游戏/2024 · 2025 穿越火线手游职业联赛(CFML)/微信图片_20260528200549_526_2.jpg` },
+  { src: `${import.meta.env.BASE_URL}经历/游戏/2024 · 2025 穿越火线手游职业联赛(CFML)/微信图片_20260528200550_527_2.jpg` },
+  { src: `${import.meta.env.BASE_URL}经历/游戏/2024 · 2025 穿越火线手游职业联赛(CFML)/微信图片_20260528200551_528_2.jpg` },
+  { src: `${import.meta.env.BASE_URL}经历/游戏/2024 · 2025 穿越火线手游职业联赛(CFML)/微信图片_20260528200552_529_2.jpg` },
   { spacer: true },
 ];
 
