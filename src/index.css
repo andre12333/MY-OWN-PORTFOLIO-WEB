@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@theme {
+  --color-space-black: #0a0a0f;
+  --color-space-deep: #0d1117;
+  --color-star-blue: #1a3a5c;
+  --color-star-blue-light: #2a5a8c;
+  --color-nebula-purple: #2d1b69;
+  --color-nebula-purple-light: #4a2d8f;
+  --color-gold: #e8d5b7;
+  --color-gold-light: #f0e4d0;
+  --color-silver: #c0c0c0;
+  --color-accent-orange: #ff6b35;
+  --color-accent-orange-light: #ff8c5a;
+  --color-accent-purple: #8b5cf6;
+  --color-accent-purple-light: #a78bfa;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", "PingFang SC", "Noto Sans SC", "Noto Sans TC", sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", "PingFang SC", "Noto Sans SC", "Noto Sans TC", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(232, 213, 183, 0.3) transparent;
+  scroll-snap-type: y proximity;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-space-black);
+  color: var(--color-silver);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar for WebKit */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(232, 213, 183, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(232, 213, 183, 0.5);
+}
+
+/* Glass morphism utility */
+.glass {
+  background: rgba(13, 17, 23, 0.6);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(232, 213, 183, 0.1);
+}
+
+.glass-strong {
+  background: rgba(13, 17, 23, 0.85);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(232, 213, 183, 0.15);
+}
+
+/* Glow border utility */
+.glow-border {
+  position: relative;
+}
+.glow-border::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(232, 213, 183, 0.4),
+    rgba(255, 107, 53, 0.3),
+    rgba(139, 92, 246, 0.3),
+    rgba(232, 213, 183, 0.4)
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Gold text gradient */
+.text-gold {
+  background: linear-gradient(135deg, #e8d5b7, #f0e4d0, #c4a97d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Star twinkle animation */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* Celestial orb rotation */
+@keyframes orb-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes orb-rotate-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes orb-pulse {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.35; }
+}
+
+@keyframes border-flow {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 200% 0%; }
+}

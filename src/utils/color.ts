@@ -1,0 +1,15 @@
+export const colors = {
+  spaceBlack: "#0a0a0f",
+  spaceDeep: "#0d1117",
+  starBlue: "#1a3a5c",
+  starBlueLight: "#2a5a8c",
+  nebulaPurple: "#2d1b69",
+  nebulaPurpleLight: "#4a2d8f",
+  gold: "#e8d5b7",
+  goldLight: "#f0e4d0",
+  silver: "#c0c0c0",
+  accentOrange: "#ff6b35",
+  accentOrangeLight: "#ff8c5a",
+  accentPurple: "#8b5cf6",
+  accentPurpleLight: "#a78bfa",
+} as const;
