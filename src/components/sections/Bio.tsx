@@ -220,7 +220,7 @@ export default function Bio() {
               }}
             >
               <img
-                src=`${import.meta.env.BASE_URL}人物.png`
+                src={`${import.meta.env.BASE_URL}人物.png`}
                 alt=""
                 className="h-full w-auto max-w-none object-contain object-bottom pointer-events-none"
                 style={{ filter: "contrast(1.15) brightness(0.95)" }}
