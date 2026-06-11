@@ -8,7 +8,7 @@ const page2Files = [
 ];
 
 const allImages = page2Files.map((file) => ({
-  src: `/page2/${file}`,
+  src: `${import.meta.env.BASE_URL}page2/${file}`,
 }));
 
 // 3 rows, each row has 4 images, duplicated for seamless loop

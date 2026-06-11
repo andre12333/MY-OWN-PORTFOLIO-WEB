@@ -36,7 +36,7 @@ export default function AboutMe() {
       ctx.putImageData(imageData, 0, 0);
       setProcessedSrc(canvas.toDataURL());
     };
-    img.src = "/卡通形象.png";
+    img.src = `${import.meta.env.BASE_URL}卡通形象.png`;
   }, []);
 
   const handleMouseMove = (e: React.MouseEvent) => {
