@@ -160,7 +160,7 @@ export default function Bio() {
 
           {/* PNG1 - parallax on mouse */}
           <motion.img
-            src={`/关于我1 ${i18n.language === "zh-HK" ? "繁" : i18n.language === "en" ? "英" : "中"}.png`}
+            src={`${import.meta.env.BASE_URL}关于我1 ${i18n.language === "zh-HK" ? "繁" : i18n.language === "en" ? "英" : "中"}.png`}
             alt=""
             className="absolute top-1/2 left-1/2 pointer-events-none z-30"
             style={{
@@ -176,7 +176,7 @@ export default function Bio() {
 
           {/* PNG2 - parallax on mouse */}
           <motion.img
-            src={`/关于我2 ${i18n.language === "zh-HK" ? "繁" : i18n.language === "en" ? "英" : "中"}.png`}
+            src={`${import.meta.env.BASE_URL}关于我2 ${i18n.language === "zh-HK" ? "繁" : i18n.language === "en" ? "英" : "中"}.png`}
             alt=""
             className="absolute top-1/2 left-1/2 pointer-events-none z-30"
             style={{
@@ -220,7 +220,7 @@ export default function Bio() {
               }}
             >
               <img
-                src="/人物.png"
+                src=`${import.meta.env.BASE_URL}人物.png`
                 alt=""
                 className="h-full w-auto max-w-none object-contain object-bottom pointer-events-none"
                 style={{ filter: "contrast(1.15) brightness(0.95)" }}
@@ -250,7 +250,7 @@ export default function Bio() {
         <div
           className="absolute inset-0 opacity-40"
           style={{
-            backgroundImage: "url(/背景1.jpg)",
+            backgroundImage: `url(${import.meta.env.BASE_URL}背景1.jpg)`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             mixBlendMode: "screen",
@@ -308,7 +308,7 @@ export default function Bio() {
 
             {/* PNG3 — fades in after split */}
             <motion.img
-              src={`/关于我3 ${i18n.language === "zh-HK" ? "繁" : i18n.language === "en" ? "英" : "中"}.png`}
+              src={`${import.meta.env.BASE_URL}关于我3 ${i18n.language === "zh-HK" ? "繁" : i18n.language === "en" ? "英" : "中"}.png`}
               alt=""
               className="absolute pointer-events-none z-20"
               style={{

@@ -10,9 +10,9 @@ gsap.registerPlugin(ScrollTrigger);
    ================================================================ */
 const TOTAL = 10;
 const imgs = [
-  "/skills/1 (1).jpg", "/skills/1 (2).jpg", "/skills/1 (3).jpg", "/skills/1 (4).jpg",
-  "/skills/1 (5).jpg", "/skills/1 (6).jpg", "/skills/1（7）.jpg", "/skills/1（8）.jpg",
-  "/skills/1 (9).png", "/skills/1（10）.png",
+  `${import.meta.env.BASE_URL}skills/1 (1).jpg`, `${import.meta.env.BASE_URL}skills/1 (2).jpg`, `${import.meta.env.BASE_URL}skills/1 (3).jpg`, `${import.meta.env.BASE_URL}skills/1 (4).jpg`,
+  `${import.meta.env.BASE_URL}skills/1 (5).jpg`, `${import.meta.env.BASE_URL}skills/1 (6).jpg`, `${import.meta.env.BASE_URL}skills/1（7）.jpg`, `${import.meta.env.BASE_URL}skills/1（8）.jpg`,
+  `${import.meta.env.BASE_URL}skills/1 (9).png`, `${import.meta.env.BASE_URL}skills/1（10）.png`,
 ];
 const accents = ["#00e5ff", "#d500f9", "#00e676", "#ff9100", "#448aff", "#ff4081", "#b2ff59", "#ffd740", "#7c4dff", "#18ffff"];
 
@@ -176,7 +176,7 @@ function Styles() {
       }
       .deck-wrapper::before {
         content: ""; position: absolute; inset: 0; z-index: 0;
-        background: url(/背景3.jpg) center/120% no-repeat;
+        background: url(${import.meta.env.BASE_URL}背景3.jpg) center/120% no-repeat;
         pointer-events: none;
         -webkit-mask-image: linear-gradient(to right, transparent, rgba(0,0,0,0.3));
         mask-image: linear-gradient(to right, transparent, rgba(0,0,0,0.3));
