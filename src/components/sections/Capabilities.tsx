@@ -67,13 +67,13 @@ interface Capability {
 }
 
 const capabilities: Capability[] = [
-  { id: 1, hasImage: true, accent: "#e8d5b7", img: "/other skills/1.png" },
+  { id: 1, hasImage: true, accent: "#e8d5b7", img: `${import.meta.env.BASE_URL}other skills/1.png` },
   { id: 2, hasImage: false, accent: "#8b5cf6" },
-  { id: 3, hasImage: true, accent: "#ff6b35", img: "/other skills/2.jpg" },
+  { id: 3, hasImage: true, accent: "#ff6b35", img: `${import.meta.env.BASE_URL}other skills/2.jpg` },
   { id: 4, hasImage: false, accent: "#e8d5b7" },
-  { id: 5, hasImage: true, accent: "#ff6b35", img: "/other skills/3.jpg" },
+  { id: 5, hasImage: true, accent: "#ff6b35", img: `${import.meta.env.BASE_URL}other skills/3.jpg` },
   { id: 6, hasImage: false, accent: "#8b5cf6" },
-  { id: 7, hasImage: true, accent: "#e8d5b7", img: "/other skills/4.jpg" },
+  { id: 7, hasImage: true, accent: "#e8d5b7", img: `${import.meta.env.BASE_URL}other skills/4.jpg` },
   { id: 8, hasImage: false, accent: "#e8d5b7" },
 ];
 

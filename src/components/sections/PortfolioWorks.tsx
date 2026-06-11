@@ -9,8 +9,8 @@ gsap.registerPlugin(ScrollTrigger);
    Data
    ================================================================ */
 const WORK = {
-  poster: "/作品集1/海报.jpg",
-  horizontalImages: Array.from({ length: 9 }, (_, i) => `/作品集1/${i + 1}.png`),
+  poster: `${import.meta.env.BASE_URL}作品集1/海报.jpg`,
+  horizontalImages: Array.from({ length: 9 }, (_, i) => `${import.meta.env.BASE_URL}作品集1/${i + 1}.png`),
   bilibili: "BV1xx411c7XG",
   youtube: "",
 };
@@ -198,7 +198,7 @@ export default function PortfolioWorks() {
       <Styles />
       <div ref={wrapRef} className="portfolio-works-wrap">
         <div ref={bgRef} className="shared-bg">
-          <img src="/作品集1/作品集背景1.jpg" alt="" />
+          <img src={`${import.meta.env.BASE_URL}作品集1/作品集背景1.jpg`} alt="" />
         </div>
         <div ref={cardsRef} className="page-card">
           <CardView />
