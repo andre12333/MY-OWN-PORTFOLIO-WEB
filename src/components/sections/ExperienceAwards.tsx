@@ -191,7 +191,7 @@ export default function ExperienceAwards() {
                 </div>
               ) : (
                 <div key={i} className="img-slot">
-                  {img.src && <img src={img.src} alt="" className="exp-img" />}
+                  {img.src && <img src={img.src} alt="" className="exp-img" loading="lazy" decoding="async" />}
                 </div>
               )
             )}

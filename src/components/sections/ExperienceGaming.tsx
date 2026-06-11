@@ -149,7 +149,7 @@ export default function ExperienceGaming() {
                 <div key={i} className="chapter-gap" />
               ) : (
                 <div key={i} className="img-slot">
-                  <img src={img.src} alt="" className="exp-img" />
+                  <img src={img.src} alt="" className="exp-img" loading="lazy" decoding="async" />
                 </div>
               )
             ))}
